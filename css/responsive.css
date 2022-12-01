@@ -1,0 +1,408 @@
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    header.header-md {
+        display: none;
+    }
+
+    header.header-sm {
+        display: block;
+        border: none;
+    }
+
+    .breadcrumb-sm {
+        display: block;
+        background-color: #FFFFFF;
+        padding-top: 5px;
+        padding-bottom: 16px;
+    }
+
+    header .row {
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    .breadcrumb .btn-back {
+        height: 40px;
+        width: 40px;
+        margin-right: 0;
+    }
+
+    .site-logo a {
+        width: 80px;
+    }
+
+    .user-short-info .user-img {
+        margin-right: 0;
+    }
+
+    .search-sec .row .col-md-6 {
+        width: 100%;
+    }
+
+    .search-sec .row .col-md-6:first-child {
+        display: none;
+    }
+
+    .search-area {
+        width: 100%;
+    }
+
+    .breadcrumb-sm .btn-back {
+        display: none;
+    }
+
+    .search-sec {
+        background-color: #FFFFFF;
+    }
+
+    .breadcrumb-sm .row {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .breadcrumb ul li a,
+    .breadcrumb ul li span {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .breadcrumb ul li::after {
+        margin: 0 10px;
+    }
+
+    .playlist-title {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .player-sec .container {
+        padding: 0;
+    }
+
+    .player-area iframe {
+        height: 360px;
+    }
+
+    .playlist-title-md {
+        display: none;
+    }
+
+    .player-options .timer .sound svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .player-options .timer .sound {
+        margin-right: 6px;
+    }
+
+    .player-options .timer {
+        font-size: 14px;
+        line-height: 16px;
+        width: 100px;
+    }
+
+    .player-options .controller ul {
+        width: 90px;
+    }
+
+    .player-options .controller ul li button svg,
+    .player-options .settings ul li button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .player-options .settings ul {
+        width: 100px;
+        gap: 14px;
+    }
+
+    .player-area .player-elements {
+        padding: 18px 16px;
+    }
+
+    .player-elements .progess-bar {
+        margin-bottom: 26px;
+    }
+
+    .player-play button svg {
+        height: 12px;
+        width: 12px;
+    }
+
+    .player-play button {
+        height: 35px;
+        width: 35px;
+        box-shadow: 0 0 0 5px #ffffff66;
+    }
+
+    .player-sec {
+        margin-bottom: 0;
+    }
+
+    .content-sec .container {
+        padding: 0;
+    }
+
+    .content-sec .content-details {
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .content-sec .row {
+        gap: 10px;
+    }
+
+    .playlist {
+        width: 100%;
+    }
+
+    .video-comment-box {
+        display: none;
+    }
+
+    .content-sec .content-details .title h1 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .content-sec .content-details .title {
+        margin-bottom: 26px;
+    }
+
+    .user-short-info .user-name {
+        margin-left: 10px;
+    }
+
+    .user-short-info .user-name p {
+        line-height: 18px;
+        margin-bottom: 3px;
+        font-size: 16px;
+    }
+
+    .content-sec .content-details .channel-info .like-btn button {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 8px 12px;
+    }
+
+    .content-sec .content-details .channel-info .like-btn button svg {
+        height: 14px;
+        width: 14px;
+        margin-right: 6px;
+        margin-bottom: -2px;
+    }
+
+    .content-sec .content-details .channel-info {
+        margin-bottom: 28px;
+    }
+
+    .content-sec .content-details .video-description {
+        padding: 14px;
+        padding-top: 12px;
+        margin-bottom: 5px;
+    }
+
+    .playlist-item {
+        margin-bottom: 10px;
+        padding: 12px 16px;
+    }
+
+    .playlist-item .list-tn {
+        margin-right: 15px;
+        width: 102px;
+    }
+
+    .playlist-item .video-summary h3 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .playlist-item .chanel-summary img {
+        width: 20px;
+        height: 20px;
+        margin-right: 9px;
+    }
+
+    .playlist-item .chanel-summary p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .playlist-item .chanel-summary {
+        margin-bottom: 10px;
+    }
+
+    .playlist-item .video-mata li {
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 25px;
+    }
+
+    .playlist-item .video-summary {
+        width: calc(100% - 117px);
+    }
+
+    .video-comment-box-sm {
+        display: block;
+        background-color: #FFFFFF;
+        margin-top: 10px;
+        padding: 16px;
+    }
+
+    .video-comment-box-sm .video-comment-box {
+        display: block;
+        padding: 10px;
+        background: #FBFBFB;
+        border-radius: 4px;
+    }
+
+    .breadcrumb ul {}
+
+    .video-comment-count {
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+
+    .video-comment-count .text {
+        padding-left: 8px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .video-comment-count .icon {
+        width: 20px;
+        height: 20px;
+        padding: 4px;
+    }
+
+    .video-comment-count .icon img {
+        width: 10px;
+    }
+
+    .video-comment-box .comment-area {
+        padding: 15px 0;
+        margin-bottom: 15px;
+    }
+
+    .video-comment-box .comment-area form button {
+        font-size: 0px;
+        padding: 3px 8px;
+    }
+
+    .video-comment-box .comment-area form button img {
+        margin-right: 0;
+        width: 11px;
+    }
+
+    .video-comment-box .comment-area form input {
+        font-size: 12px;
+        line-height: 14px;
+        height: 40px;
+        padding: 13px;
+        padding-right: 45px;
+    }
+
+    .comment-group {
+        padding: 0;
+    }
+
+    .comment-single {
+        padding: 15px;
+    }
+
+    .comment-user img {
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
+
+    .comment-user .user-name {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .comment-user .time {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .comment-user .time img {
+        width: 10px;
+        margin-right: 9px;
+    }
+
+    .comment-single .comment-text p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .comment-single .comment-btn-group button {
+        min-width: 38px;
+        height: 26px;
+    }
+
+    .comment-single .comment-btn-group button.btn-shere svg {
+        width: 9px;
+    }
+
+    .comment-single .comment-btn-group button.btn-react {
+        font-size: 12px;
+        line-height: 14px;
+        padding: 0 10px;
+    }
+
+    .comment-single .comment-btn-group button.btn-react svg {
+        width: 12px;
+        margin-right: 4px;
+        margin-bottom: -3px;
+    }
+
+    .replay-group {
+        margin-top: 18px;
+    }
+
+    main {
+        margin-bottom: 0;
+    }
+
+    .replay-single .replay-user img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .replay-single .replay-user .user-name {
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .replay-single .replay-user .time {
+        font-size: 10px;
+        line-height: 11px;
+    }
+    .replay-single .replay-text p{
+        font-size: 10px;
+        line-height: 15px;
+        padding-left: 30px;
+    }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}

@@ -15,7 +15,8 @@
 <body>
 
     <!-- header start from here -->
-    <header>
+    <!-- desktop header -->
+    <header class="header-md">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -36,6 +37,29 @@
                             <path d="M2.69092 2.69382C3.10262 2.69382 3.43637 2.35972 3.43637 1.94759C3.43637 1.53545 3.10262 1.20135 2.69092 1.20135C2.27922 1.20135 1.94547 1.53545 1.94547 1.94759C1.94547 2.35972 2.27922 2.69382 2.69092 2.69382Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M2.69089 13.1411C3.10259 13.1411 3.43634 12.807 3.43634 12.3949C3.43634 11.9827 3.10259 11.6486 2.69089 11.6486C2.27919 11.6486 1.94543 11.9827 1.94543 12.3949C1.94543 12.807 2.27919 13.1411 2.69089 13.1411Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- mobile header -->
+    <header class="header-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="breadcrumb">
+                        <a href="#" class="btn-back"></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="site-logo"><a href="#"><img src="images/logo.svg" alt="Netlify"></a></div>
+                </div>
+                <div class="col-md-4">
+                    <div class="header-content">
+                        <div class="user-short-info">
+                            <div class="user-img"><img src="images/user.jpg" alt=""></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,6 +109,27 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mobile breadcrumb -->
+
+        <section class="breadcrumb-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="breadcrumb">
+                            <a href="#" class="btn-back"></a>
+                            <ul>
+                                <li><a href="#">Grow Personality</a></li>
+                                <li><span>How not to ...</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="playlist-title">Autoplay<input type="checkbox" checked><span></span></label>
                     </div>
                 </div>
             </div>
@@ -290,7 +335,7 @@
                         </div>
                     </div>
                     <div class="playlist">
-                        <label class="playlist-title">Autoplay<input type="checkbox" checked><span></span></label>
+                        <label class="playlist-title playlist-title-md">Autoplay<input type="checkbox" checked><span></span></label>
                         <ul class="playlist-items">
                             <li class="playlist-item">
                                 <div class="list-tn"><img src="images/video-tn.jpg" alt=""></div>
@@ -375,6 +420,100 @@
                                 </div>
                             </li>
                         </ul>
+
+                        <!-- video comment area for mobile -->
+                        <div class="video-comment-box-sm">
+                            <div class="video-comment-box">
+                                <div class="video-comment-count">
+                                    <div class="icon"><img src="images/chat.svg" alt="chat"></div>
+                                    <div class="text">2,250 Comments</div>
+                                </div>
+                                <div class="comment-area">
+                                    <form action="#">
+                                        <input name="" id="" placeholder="Write your cmment here"/>
+                                        <button type="submit"><img src="images/send.svg" alt="">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="comment-group">
+                                    <div class="comment-single">
+                                        <div class="comment-user">
+                                            <img src="images/channel.jpg" alt="Kate Pray">
+                                            <div class="user-name">Kate Pray</div>
+                                            <div class="time"><img src="images/calendar.svg" alt="">03 Aug,2022</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking a</p>
+                                        </div>
+                                        <div class="comment-btn-group">
+                                            <button class="btn-shere">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1 9.99998V5.99998C1 5.46955 1.21071 4.96084 1.58579 4.58577C1.96086 4.21069 2.46957 3.99998 3 3.99998H9.66667M9.66667 3.99998L7 1.33331M9.66667 3.99998L7 6.66665"
+                                                        stroke="#0095FF" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" /></svg>
+                                            </button>
+                                            <button class="btn-react">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8533 14.7333H8.31997C7.94664 14.7333 7.1333 14.62 6.69997 14.1867L4.67997 12.6267L5.2933 11.8333L7.35997 13.4333C7.52664 13.5933 7.94664 13.7267 8.31997 13.7267H10.8533C11.4533 13.7267 12.1 13.2467 12.2333 12.7067L13.8466 7.80668C13.9533 7.51335 13.9333 7.24668 13.7933 7.05335C13.6466 6.84668 13.38 6.72668 13.0533 6.72668H10.3866C10.04 6.72668 9.71997 6.58001 9.49997 6.32668C9.2733 6.06668 9.1733 5.72001 9.22664 5.36001L9.55997 3.22001C9.63997 2.84668 9.38664 2.42668 9.02664 2.30668C8.69997 2.18668 8.27997 2.36001 8.1333 2.57335L5.39997 6.64001L4.5733 6.08668L7.30664 2.02001C7.72664 1.39335 8.64664 1.09335 9.36664 1.36668C10.2 1.64001 10.7333 2.56001 10.5466 3.41335L10.22 5.51335C10.2133 5.56001 10.2133 5.62668 10.26 5.68001C10.2933 5.71335 10.34 5.73335 10.3933 5.73335H13.06C13.7133 5.73335 14.28 6.00668 14.6133 6.48001C14.94 6.94001 15.0066 7.54668 14.7933 8.13335L13.2 12.9867C12.9533 13.9533 11.9266 14.7333 10.8533 14.7333Z"
+                                                        fill="#292D32" />
+                                                    <path
+                                                        d="M3.58667 14H2.92C1.68667 14 1.08667 13.42 1.08667 12.2333V5.70002C1.08667 4.51335 1.68667 3.93335 2.92 3.93335H3.58667C4.82 3.93335 5.42 4.51335 5.42 5.70002V12.2333C5.42 13.42 4.82 14 3.58667 14ZM2.92 4.93335C2.19334 4.93335 2.08667 5.10668 2.08667 5.70002V12.2333C2.08667 12.8267 2.19334 13 2.92 13H3.58667C4.31334 13 4.42 12.8267 4.42 12.2333V5.70002C4.42 5.10668 4.31334 4.93335 3.58667 4.93335H2.92Z"
+                                                        fill="#292D32" />
+                                                </svg>1.5K</button>
+                                        </div>
+                                        <div class="replay-group">
+                                            <div class="replay-single">
+                                                <div class="comment-user replay-user">
+                                                    <img src="images/replay-user.jpg" alt="Kate Pray">
+                                                    <div class="user-name">Joshua</div>
+                                                    <div class="time"><img src="images/time-circle-o.svg" alt="">03 Aug,2022
+                                                    </div>
+                                                </div>
+                                                <div class="comment-text replay-text">
+                                                    <p>It is a long established fact that a reader will be distracted by the
+                                                        readable content of a page when looking a</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="comment-single">
+                                        <div class="comment-user">
+                                            <img src="images/channel.jpg" alt="Kate Pray">
+                                            <div class="user-name">Jhon Smith</div>
+                                            <div class="time"><img src="images/calendar.svg" alt="">03 Aug,2022</div>
+                                        </div>
+                                        <div class="comment-text">
+                                            <p>It is a long established fact that a reader will be distracted by the
+                                                readable content of a page when looking a</p>
+                                        </div>
+                                        <div class="comment-btn-group">
+                                            <button class="btn-shere">
+                                                <svg width="11" height="11" viewBox="0 0 11 11" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M1 9.99998V5.99998C1 5.46955 1.21071 4.96084 1.58579 4.58577C1.96086 4.21069 2.46957 3.99998 3 3.99998H9.66667M9.66667 3.99998L7 1.33331M9.66667 3.99998L7 6.66665"
+                                                        stroke="#0095FF" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" /></svg>
+                                            </button>
+                                            <button class="btn-react">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10.8533 14.7333H8.31997C7.94664 14.7333 7.1333 14.62 6.69997 14.1867L4.67997 12.6267L5.2933 11.8333L7.35997 13.4333C7.52664 13.5933 7.94664 13.7267 8.31997 13.7267H10.8533C11.4533 13.7267 12.1 13.2467 12.2333 12.7067L13.8466 7.80668C13.9533 7.51335 13.9333 7.24668 13.7933 7.05335C13.6466 6.84668 13.38 6.72668 13.0533 6.72668H10.3866C10.04 6.72668 9.71997 6.58001 9.49997 6.32668C9.2733 6.06668 9.1733 5.72001 9.22664 5.36001L9.55997 3.22001C9.63997 2.84668 9.38664 2.42668 9.02664 2.30668C8.69997 2.18668 8.27997 2.36001 8.1333 2.57335L5.39997 6.64001L4.5733 6.08668L7.30664 2.02001C7.72664 1.39335 8.64664 1.09335 9.36664 1.36668C10.2 1.64001 10.7333 2.56001 10.5466 3.41335L10.22 5.51335C10.2133 5.56001 10.2133 5.62668 10.26 5.68001C10.2933 5.71335 10.34 5.73335 10.3933 5.73335H13.06C13.7133 5.73335 14.28 6.00668 14.6133 6.48001C14.94 6.94001 15.0066 7.54668 14.7933 8.13335L13.2 12.9867C12.9533 13.9533 11.9266 14.7333 10.8533 14.7333Z"
+                                                        fill="#292D32" />
+                                                    <path
+                                                        d="M3.58667 14H2.92C1.68667 14 1.08667 13.42 1.08667 12.2333V5.70002C1.08667 4.51335 1.68667 3.93335 2.92 3.93335H3.58667C4.82 3.93335 5.42 4.51335 5.42 5.70002V12.2333C5.42 13.42 4.82 14 3.58667 14ZM2.92 4.93335C2.19334 4.93335 2.08667 5.10668 2.08667 5.70002V12.2333C2.08667 12.8267 2.19334 13 2.92 13H3.58667C4.31334 13 4.42 12.8267 4.42 12.2333V5.70002C4.42 5.10668 4.31334 4.93335 3.58667 4.93335H2.92Z"
+                                                        fill="#292D32" />
+                                                </svg>1.5K</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
