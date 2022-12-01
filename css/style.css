@@ -14,6 +14,14 @@ body {
     background-color: #F5F5F5;
 }
 
+a,
+button,
+a *,
+button * {
+    cursor: pointer;
+    transition: linear .2s;
+}
+
 .container {
 
     width: 100%;
@@ -24,11 +32,8 @@ body {
 }
 
 .row {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
+display: flex;
+flex-wrap: wrap;
 }
 
 /* header */
@@ -251,13 +256,18 @@ header .col-md-6 {
 
 .content-sec {}
 
-.content-sec .row {}
+.content-sec .row {
+    width: 100%;
+    gap: 20px;
+    box-sizing: border-box;
+}
 
 .content-sec .content-details {
     background: #FFFFFF;
     border-radius: 4px;
     padding: 30px;
-    width: 70%;
+    width: calc(100% - 532px);
+    box-sizing: border-box;
 }
 
 .content-sec .content-details .title {
@@ -311,6 +321,7 @@ header .col-md-6 {
     padding: 20px;
     padding-top: 14px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .content-sec .content-details .video-description h2 {
@@ -339,3 +350,295 @@ header .col-md-6 {
     bottom: -10px;
     transform: translate(-50%, 0);
 }
+
+.video-comment-box {
+    background: #FBFBFB;
+    border-radius: 4px;
+}
+
+.video-comment-count {
+    padding: 14px 20px;
+    display: flex;
+    line-height: 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.video-comment-count .icon {
+    background: #FFFFFF;
+    border: 1px solid #0000000d;
+    border-radius: 4px;
+    height: 26px;
+    width: 26px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.video-comment-count .icon img {
+    width: 13px;
+}
+
+.video-comment-count .text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #131D29;
+    opacity: 0.9;
+    padding-left: 10px;
+}
+
+.video-comment-box .comment-area {
+    padding: 18px 20px;
+    border-top: 1px solid #0000001a;
+    border-bottom: 1px solid #0000001a;
+    margin-bottom: 20px;
+}
+
+.video-comment-box .comment-area form {
+    position: relative;
+    line-height: 0;
+}
+
+.video-comment-box .comment-area form input {
+    background: #FFFFFF;
+    border: 1px solid #0000000d;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    min-height: 57px;
+    padding-right: 125px;
+}
+
+.video-comment-box .comment-area form button {
+    background: #0090FF;
+    border-radius: 4px;
+    border: none;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.video-comment-box .comment-area form button img {
+    width: 16px;
+    margin-right: 10px;
+}
+
+.comment-group {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 15px;
+    padding-bottom: 18px;
+}
+
+.comment-single {
+    background: #FEFEFE;
+    border-radius: 4px;
+    padding: 16px 20px 20px 20px;
+}
+
+.comment-user {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.comment-user img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.comment-user .user-name {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #15161A;
+    opacity: 0.9;
+}
+
+.comment-user .time {
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1px;
+    color: #5D6373;
+    opacity: 0.9;
+}
+
+.comment-user .time img {
+    width: 16px;
+    height: auto;
+    border-radius: 0;
+    object-fit: unset;
+    margin-right: 12px;
+}
+
+.comment-single .comment-text {
+    margin-bottom: 18px;
+}
+
+.comment-single .comment-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #5D6373;
+}
+
+.comment-single .comment-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+.comment-single .comment-btn-group button {
+    min-width: 58px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-single .comment-btn-group button.btn-shere {
+    background-color: #F2F9FF;
+}
+
+.comment-single .comment-btn-group button.btn-shere svg {
+    width: 11px;
+}
+
+.comment-single .comment-btn-group button.btn-react {
+    padding: 0 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #131D29;
+}
+
+.comment-single .comment-btn-group button.btn-react svg {
+    width: 16px;
+    margin-right: 9px;
+    margin-bottom: -2px;
+    margin-left: 2px;
+
+}
+
+.comment-single .comment-btn-group button:hover {
+    background-color: #F2F9FF;
+    color: #0095FF;
+}
+
+.comment-single .comment-btn-group button.btn-react:hover path {
+    fill: #0095FF;
+}
+
+.replay-group {
+    margin-top: 28px;
+    border-top: 1px solid #0000001a;
+    padding-top: 9px;
+}
+
+.replay-single {}
+
+.replay-single .replay-user {
+    margin-bottom: 10px;
+}
+
+.replay-single .replay-user img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.replay-single .replay-user .user-name {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.replay-single .replay-user .time {
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.replay-single .replay-user .time img {
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+}
+
+.replay-single .replay-text {
+    margin-bottom: 0;
+}
+
+.replay-single .replay-text p {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 35px;
+    box-sizing: border-box;
+}
+
+.playlist {
+    width: 512px;
+    box-sizing: border-box;
+}
+
+.playlist-title {
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131D29;
+}
+
+.playlist-title input {}
+
+.playlist-items {
+    list-style: none;
+}
+
+.playlist-item {}
+
+.playlist-item .list-tn {}
+
+.playlist-item .list-tn img {}
+
+.playlist-item .video-summary {}
+
+.playlist-item .video-summary h3 {}
+
+.playlist-item .chanel-summary {}
+
+.playlist-item .chanel-summary img {}
+
+.playlist-item .chanel-summary p {}
+
+.playlist-item .video-mata {}
+
+.playlist-item .video-mata li {}
+
+.playlist-item .video-mata li img {}
