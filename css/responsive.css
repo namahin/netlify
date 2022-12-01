@@ -1,6 +1,61 @@
 /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {}
 
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .content-sec .content-details {
+        width: calc(100% - 380px);
+    }
+
+    .playlist {
+        width: 360px;
+    }
+
+    .playlist-item .list-tn {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 18px;
+    }
+
+    .playlist-item .video-summary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .content-sec .content-details {
+        width: 100% !important;
+    }
+
+    .playlist {
+        width: 100% !important;
+    }
+
+    .playlist-item .list-tn {
+        line-height: 0;
+        width: 168px;
+        margin-right: 18px;
+    }
+
+    .playlist-item .video-summary {
+        width: calc(100% - 186px);
+    }
+    .search-area{
+        width: 340px;
+    }
+}
+
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
     .container {
@@ -178,6 +233,7 @@
 
     .content-sec .content-details .title {
         margin-bottom: 26px;
+        flex-wrap: nowrap;
     }
 
     .user-short-info .user-name {
@@ -267,8 +323,6 @@
         background: #FBFBFB;
         border-radius: 4px;
     }
-
-    .breadcrumb ul {}
 
     .video-comment-count {
         padding: 0px;
@@ -391,18 +445,10 @@
         font-size: 10px;
         line-height: 11px;
     }
-    .replay-single .replay-text p{
+
+    .replay-single .replay-text p {
         font-size: 10px;
         line-height: 15px;
         padding-left: 30px;
     }
 }
-
-/* // `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
-
-/* // `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
-
-/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {}

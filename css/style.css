@@ -58,8 +58,6 @@ header .col-md-6 {
     flex: 0 0 auto;
 }
 
-.site-logo {}
-
 .site-logo a {
     display: block;
     width: 120px;
@@ -125,8 +123,6 @@ header .col-md-6 {
     object-fit: cover;
 }
 
-.user-short-info .user-name {}
-
 .user-short-info .user-name p {
     font-weight: 500;
     font-size: 18px;
@@ -142,7 +138,6 @@ header .col-md-6 {
     color: #A5ACB5;
 }
 
-.header-content .toggle {}
 .header-content .toggle button{
     background: #0095FF;
     border-radius: 2px;
@@ -172,8 +167,6 @@ header.header-sm{
     justify-content: space-between;
     align-items: center;
 }
-
-.search-sec .row .col-md-6 {}
 
 .breadcrumb {
     display: flex;
@@ -240,8 +233,6 @@ header.header-sm{
     width: 400px;
     position: relative;
 }
-
-.search-box {}
 
 .search-box form {
     position: relative;
@@ -369,8 +360,6 @@ header.header-sm{
     box-shadow: 0 0 0 7px #ffffff66;
 }
 
-.player-play button svg {}
-
 .player-area .player-elements {
     background: linear-gradient(180deg, #0e424b00 4.64%, #000b13e3 100%);
     padding: 105px 30px 45px 30px;
@@ -452,8 +441,6 @@ header.header-sm{
     margin-left: 5px;
 }
 
-.player-options .controller {}
-
 .player-options .controller ul {
     list-style: none;
     display: flex;
@@ -474,8 +461,6 @@ header.header-sm{
     line-height: 0;
 }
 
-.player-options .controller ul li button svg {}
-
 .player-options .settings ul {
     display: flex;
     width: 150px;
@@ -493,8 +478,6 @@ header.header-sm{
     background-color: transparent;
     line-height: 0;
 }
-
-.player-options .settings ul li button svg {}
 
 .content-sec .row {
     width: 100%;
@@ -547,8 +530,6 @@ header.header-sm{
     margin-bottom: 30px;
     line-height: 0;
 }
-
-.content-sec .content-details .channel-info .like-btn {}
 
 .content-sec .content-details .channel-info .like-btn button {
     background: #FBFBFB;
@@ -812,8 +793,6 @@ header.header-sm{
     border-top: 1px solid #0000001a;
     padding-top: 9px;
 }
-
-.replay-single {}
 
 .replay-single .replay-user {
     margin-bottom: 10px;
