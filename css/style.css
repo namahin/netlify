@@ -596,6 +596,17 @@ header.header-sm {
     font-size: 14px;
     line-height: 22px;
     color: #7F7F91;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 3;
+    transition: linear .3s;
+}
+
+.content-sec .content-details .video-description p.expendDescription {
+    display: block;
 }
 
 .content-sec .content-details .video-description button {
@@ -608,6 +619,11 @@ header.header-sm {
     left: 50%;
     bottom: -10px;
     transform: translate(-50%, 0);
+}
+
+.content-sec .content-details .video-description p.expendDescription+button svg {
+
+    transform: rotate(180deg);
 }
 
 .video-comment-box {
