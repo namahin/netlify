@@ -345,12 +345,12 @@
 
     .video-comment-box .comment-area form button {
         font-size: 0px;
-        padding: 3px 8px;
+        padding: 7px;
     }
 
     .video-comment-box .comment-area form button img {
         margin-right: 0;
-        width: 11px;
+        width: 12px;
     }
 
     .video-comment-box .comment-area form input {
