@@ -272,7 +272,7 @@
         width: 102px;
     }
 
-    .playlist-item .video-summary h3 {
+    .playlist-item .video-summary h3 a {
         font-size: 14px;
         line-height: 16px;
         margin-bottom: 10px;

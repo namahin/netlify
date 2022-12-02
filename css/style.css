@@ -973,7 +973,7 @@ header.header-sm {
     width: calc(100% - 186px);
 }
 
-.playlist-item .video-summary h3 {
+.playlist-item .video-summary h3 a{
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
@@ -985,6 +985,11 @@ header.header-sm {
     text-overflow: ellipsis;
     white-space: normal;
     -webkit-line-clamp: 2;
+    text-decoration: none;
+}
+
+.playlist-item .video-summary h3 a:hover{
+    color: var(--color-primary);
 }
 
 .playlist-item .chanel-summary {
