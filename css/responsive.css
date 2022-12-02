@@ -270,6 +270,7 @@
     .playlist-item .list-tn {
         margin-right: 15px;
         width: 102px;
+        margin-bottom: 0;
     }
 
     .playlist-item .video-summary h3 a {
